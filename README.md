@@ -2,7 +2,7 @@
 
 
 ## Objetivo de la prueba
-El objetivo de esta prueba es conocer las buenas practicas y forma de llevar a cabo el desarrollo de un pequeño proyecto para dispositivos móviles, especificamente para celulares con sistema *Android*, bajo el lenguaje de programación **Kotlin**.
+El objetivo de esta prueba es conocer las buenas prácticas y forma de llevar a cabo el desarrollo de un pequeño proyecto para dispositivos móviles, específicamente para celulares con sistema *Android*, bajo el lenguaje de programación **Kotlin**.
 
 Los requisitos básicos son los siguientes:
 - Experiencia con GIT, en este caso con la plataforma github.com.
@@ -16,20 +16,20 @@ Los requisitos básicos son los siguientes:
 ## Requerimientos del proyecto.
 
 ### Requisitos funcionales.
-**Empresa Peroles, SA** requiere poder contactar con sus empleados de una forma rápida, para ello requiere una aplicación para celulares que se conecte al servidor de la empresa y muestre los empleados disponibles, adicionalmente el usuario de la aplicación pueda señalar a sus compañeros con quien contacta habitualmente. La aplicación debe marcar de forma automatica el número telefonico del empleado deseado.
+**Empresa Peroles, SA** requiere poder contactar con sus empleados de una forma rápida, para ello requiere una aplicación para celulares que se conecte al servidor de la empresa y muestre los empleados disponibles, adicionalmente el usuario de la aplicación pueda señalar a sus compañeros con quien contacta habitualmente. La aplicación debe marcar de forma automática el número telefónico del empleado deseado.
 
-### Requisitos tecnicos.
-El departamento de informatica de la empresa requiere tecnicamente lo siguiente:
+### Requisitos técnicos.
+El departamento de informática de la empresa requiere técnicamente lo siguiente:
 - El lenguaje de programación debe ser Kotlin.
-- La lista global de empleados es obtenida por medio de un servicio REST API, cuya especificación la describiremos en la sección correcpondiente *"Documentación del servicio REST API"*.
-- El diseño UI debe respetar en principio lo plasmado en la imagen ![wireframe.png](wireframe.png), pero el desarrollador es libre de plantear cambios u otro diseño que se considere más atractivo.
+- La lista global de empleados es obtenida por medio de un servicio REST API, cuya especificación la describiremos en la sección correspondiente *"Documentación del servicio REST API"*.
+- El diseño UI debe respetar en principio lo plasmado en la imagen ![wireframe.png](wireframe.png).
 - Tomando como referencia el wireframe original, el usuario de la aplicación debe poder cambiar de vistas, de una lista global de empleados a una lista de empleados marcados como favorito.
 - Los empleados de la lista global serán siempre tomados del servicio REST API, pero los empleados marcados como favoritos deben ser gestionados con la propia base de datos de Android.
 - En la lista de empleados global, la paginación de los empleados se debe efectuar cuando el usuario llegue al final de la lista global, siempre cargando empleados de diez en diez.
-- Eres libre de utilizar cualquier libreria para el manejo de las imagenes de los empleados.
+- Eres libre de utilizar cualquier librería para el manejo de las imagenes de los empleados.
 - En el desarrollo debes aplicar la arquitectura MVVM, inyección de dependencias, coroutines, ROOM y los test unitarios que consideres necesarios.
-- La funcionalidad de busqueda de empleados es opcional.
-- El idioma por defecto de la aplicación es Ingles (US), pero tomad en cuenta que la mayoria de los usuarios usa el español, así que dicho idioma debe estar disponible.
+- La funcionalidad de búsqueda de empleados es opcional.
+- El idioma por defecto de la aplicación es Ingles (US), pero tomad en cuenta que la mayoría de los usuarios usa el español, así que dicho idioma debe estar disponible.
 
 
 ### Documentación del servicio REST API.
@@ -38,12 +38,12 @@ Utilizaremos el servicio REST API que nos provee la plataforma [RANDOM USER GENE
 Según la documentación de la plataforma, la primera llamada es un GET a la siguiente URL:
 https://randomuser.me/api/?nat=es&results=10  [Prueba](https://randomuser.me/),
 
-Los parametros nat y results nos permite obtener diez empleados de nacionalidad española.
+Los parámetros nat y results nos permiten obtener diez empleados de nacionalidad española.
 
 Para obtener más empleados, de diez en diez, las siguientes llamadas deben ser de la así:
 https://randomuser.me/api/?nat=es&results=10&page=PAGINA&seed=CODIGO_SEED
 
-Los parametros **page** y **seed** deben ser informados según la lógica que implementes, pero es evidente que **page** corresponde con la siguiente página a consultar y el parametro **seed** lo debes informar tomando su valor de la primera consulta, en el objeto *JSON* de respuesta lo podemos identificar:
+Los parámetros **page** y **seed** deben ser informados según la lógica que implementes, pero es evidente que **page** corresponde con la siguiente página a consultar y el parámetro **seed** lo debes informar tomando su valor de la primera consulta, en el objeto *JSON* de respuesta lo podemos identificar:
 
 ```
   "info": {
@@ -69,8 +69,9 @@ La entrega de la prueba es de la siguiente forma.
 ## Notas.
 * No hay limite de tiempo para la entrega del proyecto, pero no dejes que se te adelanten.
 * Si no te gustan los comentarios en el código, no tienes porque escribirlo, pero no esta demas alguno que otro.
-* Nos gusta los *"fragments"* y el codigo reutilizable.
-* Si tienes alguna duda sobre los requerimientos, envianos un correo con el asunto: **[DUDA] Android Developer (Kotlin)**.
+* Nos gusta los *"fragments"* y el código reutilizable.
+* Si tienes alguna duda sobre los requerimientos, envíanos un correo con el asunto: **[DUDA] Android Developer (Kotlin)**.
+
 
 
 

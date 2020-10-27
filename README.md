@@ -55,7 +55,7 @@ Los parámetros **page** y **seed** deben ser informados según la lógica que i
 
 ```
 
-En la [Documentación oficial de la plataforma] https://randomuser.me/documentation puedes encontrar todos los detalles, inclusive puedes obtener solo la información requerida de los empleados y evitar de esta forma obtener información que no vas a usar dentro del diseño de la aplicación.
+En la [Documentación oficial de la plataforma](https://randomuser.me/documentation) puedes encontrar todos los detalles, inclusive puedes obtener solo la información requerida de los empleados y evitar de esta forma obtener información que no vas a usar dentro del diseño de la aplicación.
 
 ## Entrega del proyecto.
 La entrega de la prueba es de la siguiente forma.

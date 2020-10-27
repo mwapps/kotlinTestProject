@@ -36,7 +36,7 @@ El departamento de informática de la empresa requiere técnicamente lo siguient
 Utilizaremos el servicio REST API que nos provee la plataforma [RANDOM USER GENERATOR](https://randomuser.me/) 
 
 Según la documentación de la plataforma, la primera llamada es un GET a la siguiente URL:
-https://randomuser.me/api/?nat=es&results=10  [Prueba](https://randomuser.me/),
+https://randomuser.me/api/?nat=es&results=10  [Prueba](https://randomuser.me/api/?nat=es&results=10),
 
 Los parámetros nat y results nos permiten obtener diez empleados de nacionalidad española.
 
